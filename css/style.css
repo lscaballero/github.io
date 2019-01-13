@@ -1,0 +1,6 @@
+.banner{
+    background: url("../images/ban-1.jpeg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+}
