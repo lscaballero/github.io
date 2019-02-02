@@ -8,3 +8,6 @@
     background-size: cover;
     background-position: center; 
 }
+.about-us{
+    background: (transparent url('/images/black-back.jpg') no-repeat center center / cover);
+}
