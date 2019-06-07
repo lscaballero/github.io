@@ -1,79 +1,419 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Luis Caballero</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inicio</title>
 
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="css/bootstrap.css">
-    <!--style-->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!--style-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
-<body> 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light nav">
-      <a class="navbar-brand" href="#">LOGO</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<body>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sobre mi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Proyectos</a>
-          </li>
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Proyectos
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div> -->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Contacto</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+  <nav id="menu" class="navbar navbar-expand-md navbar-dark bg-primary nav position-fixed">
+    <a class="navbar-brand position-absolute" href="index.html">
+      <img src="images/logo_not.png" class="d-inline-block align-top" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ml-auto text-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="algoquecontar.html">Algo que contar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="proyectos.html">Proyectos</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="contacto.php">Contacto</a>
+        </li>
+      </ul>
+      <div class="d-flex flex-flow justify-content-center ">
+        <a id="facebook" href="https://www.facebook.com/alfreddocaballero"
+          class="btn btn-outline-primary bg-light mr-2" target="blank">F</a>
+        <a id="linkedin" href="https://www.linkedin.com/in/luis-alfredo-caballero-vega-1a9907116/"
+          class="btn btn-outline-secondary bg-light" target="blank">In</a>
       </div>
-    </nav>
-<!-- Banner de presentación -->
 
-<section class="justify-content-center d-flex container-fluid banner align-items-center">
+    </div>
+  </nav>
+  <!-- Banner de presentación -->
+  <!-- <section class="justify-content-center d-flex container-fluid banner align-items-center">
   <h1 class="display-1">Soy Luis Caballero</h1>
-</section>
+</section> -->
 
-<section class="about-us">
-  <div class="about-us-1">
-    <h2>Sobre mí</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab fugiat aliquid architecto quam praesentium. Eaque aut veniam cupiditate laborum porro itaque illo vitae rerum facere harum. Sunt possimus assumenda minima?</p>
+  <!-- Banner  -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active new-banner" id="new-banner">
+        <img class="d-block w-100" src="images/slides/dev.jpg" alt="backend">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Backend</h5>
+          <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sapiente aperiam odit corporis, ab culpa
+            commodi beatae corrupti, dolorem dicta omnis officiis deleniti laboriosam pariatur vero cupiditate illo
+            amet. Impedit.</p> -->
+        </div>
+      </div>
+      <div class="carousel-item new-banner">
+        <img class="d-block w-100" src="images/slides/design.jpg" alt="frontend">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Frontend</h5>
+          <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, voluptates ullam quia voluptas aut maxime
+            debitis fugiat officia amet. Sint unde dolorum consequatur laudantium mollitia suscipit eveniet, vitae
+            aspernatur inventore.</p> -->
+        </div>
+      </div>
+      <div class="carousel-item new-banner" id="new-banner">
+        <img class="d-block w-100" src="images/slides/library.jpg" alt="conocimiento">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Conocimiento Práctico</h5>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consequatur modi, ipsam
+            accusantium laboriosam amet dolor praesentium cum reprehenderit assumenda nostrum commodi eveniet nulla
+            totam suscipit minima recusandae tempore rem.</p> -->
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-  <div class="about-us-2">
-    <figure>
-      <img src="" alt="">
-    </figure>
-  </div>
-</section>
 
+  <!-- sobre mí -->
+  <section class="about-us container-fluid">
+    <div class="about-us-1">
+      <h2 class="display-3 text-center text-uppercase">Sobre mí</h2>
+      <p>Estos años desarrollando me han permitido ver el mundo de otra forma, encontrar una parte de mí que no conocía; no se si para todas las profesiones se igual, pero sé que encontré mi camino, aunque no estoy cegado por el mismo, pues me permito explorar otros mundos relacionados como la RV y RA, intento conectar todo. Sigo luchando para como todas las personas dejar mí legado.</p>
+    </div>
+    <div class="about-us-2 ">
+      <figure>
+        <img src="images/sho.jpg" alt="Foto Luis Caballero">
+      </figure>
+    </div>
+  </section>
+  <!-- proyectos realizados -->
+  <section>
+    <h2 class="display-3"></h2>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+  <!-- Cards Proyectos -->
+  <!-- ------------------titulo -->
+  <section class="index-conocimientos container mt-5 pt-5" id="index-conocimientos">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Mis últimos proyectos</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+    <!-- <h2 class="display-5">Conocimientos</h2> -->
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top img-fluid lc-img-project" src="images/proyectos/cw-mini.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">CW Asesores Tributarios</h5>
+          <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p> -->
+          <a class="btn btn-primary" href="https://www.cwasesorestributarios.com/" target="blank" role="button">Ver
+            Sitio</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top img-fluid lc-img-project" src="images/proyectos/ips-min.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Clínica IPS Eugenio Díaz</h5>
+          <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p> -->
+          <a class="btn btn-primary" href="http://www.clinicaeugeniodiaz.com/" role="button">Ver Sitio</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top img-fluid lc-img-project" src="images/proyectos/jm-min.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Stonework JM Granite</h5>
+          <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p> -->
+          <a class="btn btn-primary" href="https://granitejesus.com/en/" role="button">Ver Sitio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- mis conocimientos -->
+  <section class="index-conocimientos container mt-5 pt-5" id="index-conocimientos">
+    <div class="jumbotron jumbotron-fluid lc-jumbotron">
+      <div class="container">
+        <h1 class="display-4">Mis conocimientos</h1>
+      </div>
+    </div>
 
+    <!-- tooltip -->
+    <section class="container-fluid d-flex justify-content-between  text-center mt-5">
+      <button type="button" class="btn btn-secondary border-0" data-toggle="tooltip" data-placement="top"
+        data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+        PHP
+      </button>
+      <button type="button" class="btn btn-secondary joomla-color border-0" data-toggle="tooltip" data-placement="right"
+        title="Tooltip on right">
+        Joomla 3
+      </button>
+      <button type="button" class="btn btn-primary border-0" data-toggle="tooltip" data-placement="right"
+        title="Tooltip on right">
+        Drupal 8
+      </button>
+      <button type="button" class="btn btn-secondary git-color" data-toggle="tooltip" data-placement="right"
+        title="Tooltip on right">
+        GIT
+      </button>
+      <button type="button" class="btn btn-secondary css-color" data-toggle="tooltip" data-placement="right"
+        title="Tooltip on right">
+        CSS
+      </button>
+      <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom"
+        title="Tooltip on bottom">
+        YAML
+      </button>
+      <button type="button" class="btn btn-secondary mysql-color" data-toggle="tooltip" data-placement="left"
+        title="Tooltip on left">
+        MYSQL
+      </button>
+      <button type="button" class="btn btn-secondary boo-color" data-toggle="tooltip" data-placement="left"
+        title="Tooltip on left">
+        Boobstrap
+      </button>
+      <button type="button" class="btn btn-secondary cpanel-color" data-toggle="tooltip" data-placement="left"
+        title="Tooltip on left">
+        Cpanel
+      </button>
+    </section>
+  </section>
+  <!-- cards con doble imagen -->
+  <!-- <section class="container container-fliud mt-5">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top img-fliud" src="images/blog-1.jpg" alt="Card image cap">
+        <figure class="text-center">
+          <img src="images/sho.jpg" class="perfil rounded-circle" alt="foto de perfil" class="img-fluid" height="100px"
+            width="100px">
+        </figure>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="#"><i class="fab fa-facebook-f mx-2"></i></a>
+          <a href="#"><i class="fab fa-twitter mx-2"></i></a>
+          <a href="#"><i class="fab fa-linkedin mx-2"></i></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top img-fluid" src="images/blog-1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="#"><i class="fab fa-facebook-f mx-2"></i></a>
+          <a href="#"><i class="fab fa-twitter mx-2"></i></a>
+          <a href="#"><i class="fab fa-linkedin mx-2"></i></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top img-fluid" src="images/blog-1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="#"><i class="fab fa-facebook-f mx-2"></i></a>
+          <a href="#"><i class="fab fa-twitter mx-2"></i></a>
+          <a href="#"><i class="fab fa-linkedin mx-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-------------- Articulos recientes -->
+  <!-- <section class="container contaniner-fluid mt-5">
+      <div class="jumbotron jumbotron-fluid lc-jumbotron">
+          <div class="container">
+            <h1 class="display-4">Últimos articulos publicados</h1>
+          </div>
+        </div>
+    <div class="tab-content"> -->
+  <!-- elemento 1 -->
+  <!-- <div class="tab-pane active" id="testi-1" role="tabpanel">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <img clas="img-fliud" src="images/blog/blog-2.jpeg" alt="" width="100%">
+          </div>
+          <div class="col-lg-8 mb-5">
+            <h4 class="lead">Lorem ipsum aspernatur eaque vitae tempora exercitationem </h4>
+            <h2>lorem ipsum fas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam labore voluptas asperiores
+              doloremque quaerat, officia distinctio ut esse doloribus cupiditate possimus, ratione, cumque eos iusto.
+              Omnis perferendis asperiores eligendi cupiditate?</p>
+          </div>
+        </div>
+      </div> -->
+  <!-- fin elemento -->
+  <!-- elemento 2 -->
+  <!-- <div class="tab-pane" id="testi-2" role="tabpanel">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <img clas="img-fliud" src="images/blog/blog-3.jpg" alt="" width="100%">
+          </div>
+          <div class="col-lg-8 mb-5">
+            <h4 class="lead">Lorem ipsum aspernatur eaque vitae tempora exercitationem </h4>
+            <h2>lorem ipsum fas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam labore voluptas asperiores
+              doloremque quaerat, officia distinctio ut esse doloribus cupiditate possimus, ratione, cumque eos iusto.
+              Omnis perferendis asperiores eligendi cupiditate?</p>
+          </div>
+        </div>
+      </div> -->
+  <!-- fin elemento -->
+  <!-- elemento 3 -->
+  <!-- <div class="tab-pane" id="testi-3" role="tabpanel">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <img clas="img-fliud" src="images/blog/blog-4.jpeg" alt="" width="100%">
+          </div>
+          <div class="col-lg-8 mb-5">
+            <h4 class="lead">Lorem ipsum aspernatur eaque vitae tempora exercitationem </h4>
+            <h2>lorem ipsum fas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam labore voluptas asperiores
+              doloremque quaerat, officia distinctio ut esse doloribus cupiditate possimus, ratione, cumque eos iusto.
+              Omnis perferendis asperiores eligendi cupiditate?</p>
+          </div>
+        </div>
+      </div> -->
+  <!-- fin elemento -->
+  <!-- </div> -->
+  <!-- navs testimonios -->
+  <!-- <div class="row display-testi">
+      <ul class="nav nav-tabs offset-4 col-lg-8" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#testi-1" role="tab">
+            <img src="images/blog/blog-2.jpeg" alt="" class="img-nav-testi">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#testi-2" role="tab">
+            <img src="images/blog/blog-3.jpg" alt=""class="img-nav-testi" >
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#testi-3" role="tab">
+            <img src="images/blog/blog-4.jpeg" alt="" class="img-nav-testi">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section> -->
+  <!-- footer -->
+  <footer class="bg-dark p-5 mt-5">
+    <!-- footer 0 -->
+    <div class="footer-0 container container-fluid">
+      <h2 class="display-4 text-white">Contacto</h2>
+      <div class="row pt-3">
+        <div class="col-4">
+            <a id="facebook" class="fo-face" href="https://www.facebook.com/alfreddocaballero">Facebook</a>
+        </div>
+        <div class="col-4">
+            <a id="linkedin" class="fo-in" href="https://www.linkedin.com/in/luis-alfredo-caballero-vega-1a9907116/">Linkedin</a>
+          </div>
+        <div class="col-4">
+          <p class="text-white">correo: alfreddocaballero@gmail.com</p>
+        </div>
+      </div>
+    </div>
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.js"></script>
+    <!-- footer 1 -->
+    <!-- <div class="container container-fluid">
+        <h2 class="display-4">Contacto</h2>
+        <div class="row">
+          <div class="col-6">
+            <form name="" class="form-inline flex-column flex-sm-row" enctype="application/x-www-form-urlencoded"
+              action="https://wareking.ip-zone.com/ccm/subscribe/index/form/mzgsxujy1d" method="post">
+              <input type="hidden" name="groups[]" value="2">
+              <div class="form-group row"> -->
+    <!-- <label for="" name="nombre" class="col-2 col-sm-2 col-form-label hidden-sm-down">Nombre: </label> -->
+    <!-- <div class="col-10 col-sm-10">
+                  <input type="text" class="form-control-plaintext" placeholder="Nombre" name="name" id="name" value="">
+                </div>
+              </div>
+              <div class="form-group row"> -->
+    <!-- <label for="" name="email" class="col-2 col-sm-2 col-form-label hidden-sm-down">Email:</label> -->
+    <!-- <div class="col-10 col-sm-10">
+                  <input type="text" class="form-control-plaintext" placeholder="email@example.com" name="email"
+                    id="email" value="">
+                </div>
+              </div>
+              <div class="form-group">
+                <input class="btn btn-danger" type="submit" name="submit" id="submit" value="Suscribir">
+              </div>
+              <input type="text" name="anotheremail" id="anotheremail" value=""
+                style="position: absolute; left: -5000px" tabindex="-1">
+              <input type="hidden" name="successUrl" value="https://lscaballero.github.io/luisc/" id="successUrl">
+              <input type="hidden" name="errorUrl" value="https://lscaballero.github.io/luisc/" id="errorUrl">
+            </form>
+          </div>
+        </div>
+      </div> -->
+  </footer>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+  </script>
+  <script src="js/bootstrap.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+    integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous">
+  </script>
+  <!-- script para el funcionamiento de los tooltips -->
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+  <!-- script para el cambio de color del navbar -->
+  <script>
+    $(window).scroll(function () {
+      if ($("#menu").offset().top > 56) {
+        $("#menu").addClass("bg-dark");
+      } else {
+        $("#menu").removeClass("bg-dark");
+      }
+    });
+  </script>
+
 </body>
+
 </html>

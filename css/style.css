@@ -1,13 +1,138 @@
-.nav{
-    position: fixed;
+.nav {
+    z-index: 100;
     width: 100%;
 }
-.banner{
+
+.navbar-brand img {
+    width: 20%;
+}
+
+.navbar-nav a {
+    color: #fff !important;
+}
+/*---------------------- Home ---------------*/
+.lc-img-project{
+    height: 250px;
+    object-fit: cover;
+}
+.lc-jumbotron{
+    margin: 0;
+    padding: 2rem 1rem;
+}
+.banner {
     background: url("../images/ban-1.jpeg");
     height: 100vh;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
 }
-.about-us{
-    background: (transparent url('/images/black-back.jpg') no-repeat center center / cover);
+
+.new-banner {
+    height: 100vh;
+}
+
+#new-banner img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.new-banner h5{
+    background: #000;
+    opacity: 0.6;
+    padding: 10px 1px;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}
+
+.about-us {
+    background: transparent url('../images/back-gray.jpg') no-repeat center center / cover;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-us-1 {
+    padding: 100px;
+    width: 50%;
+}
+
+.about-us-2 {
+    width: 50%;
+}
+
+.about-us-2 figure {
+    width: 100%;
+}
+
+.about-us-2 img {
+    padding: 100px;
+    width: 70%;
+}
+
+.proyectos {
+    width: 100%;
+}
+
+.card-proyectos {
+    -ms-flex: 1 0 30%;
+    flex: 1 0 30% !important;
+}
+
+.new-section .navbar-nav a {
+    color: #000 !important;
+}
+
+.big-section {
+    position: relative;
+}
+
+.perfil {
+    margin-top: -50px;
+    border: 2px solid #ddd;
+}
+.img-nav-testi {
+    width: 130px;
+}
+/* colores botones */
+.css-color{
+    background: #3595cf;
+}
+.joomla-color{
+    background: #76bb41;
+}
+.git-color{
+    background: #e94e31;
+}
+.mysql-color{
+    background: #e18b00;
+}
+.boo-color{
+    background-color: #563d7c;
+}
+.cpanel-color{
+    background-color: #f7692b;
+}
+.fo-face{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.fo-face:hover{
+    color: #4267b2;
+    text-decoration: none;
+}
+.fo-in{
+    text-decoration: none;
+    color: #fff;
+}
+.fo-in:hover{
+    color: #0077B5;
+    text-decoration: none;
+}
+@media (min-width: 992px) {
+    .display-testi {
+        position: relative;
+        margin-top: -110px;
+    }
 }
