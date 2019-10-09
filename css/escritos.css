@@ -4,3 +4,9 @@
 .slideshow-blog h1{
     background: rgba(255,250,250,0.3);
 }
+.navbar-logo{
+    width: 5%;
+}
+.navbar-logo img{
+    width: 65%;
+}
