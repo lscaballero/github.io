@@ -32,7 +32,7 @@ a:link {
     padding: 2rem 1rem;
 }
 .banner {
-    background: url("../images/ban-1.jpeg");
+    /* background: url("../images/ban-1.jpeg"); */
     height: 100vh;
     background-size: cover;
     background-position: center;
