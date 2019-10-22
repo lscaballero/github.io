@@ -1,51 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contacto</title>
-    <link rel="shortcut icon" href="favicon.ico" />    
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="css/bootstrap.css">
-    <!--style-->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contacto</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!--style-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contacto.css">
 </head>
+
 <body>
-<nav class="navbar navbar-expand-md navbar-light bg-dark nav sticky-top">
-      <a class="navbar-brand position-absolute" href="index.html">
-        <img src="images/logo_not.png" class="d-inline-block align-top" alt="Logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav class="navbar navbar-expand-md navbar-light bg-dark nav sticky-top">
+    <a class="navbar-brand position-absolute" href="index.html">
+      <img src="images/logo_not.png" class="d-inline-block align-top" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto ml-auto text-center">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sobremi.html">Sobre mi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="proyectos.html">Proyectos</a>
-          </li>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link disabled" href="contacto.php">Contacto</a>
-          </li>
-        </ul>
-        <div class="d-flex flex-flow justify-content-center ">
-          <a href="" class="btn btn-outline-primary mr-2">F</a>
-          <a href="" class="btn btn-outline-secondary">In</a>
-        </div>
-
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ml-auto text-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobremi.html">Sobre mi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="proyectos.html">Proyectos</a>
+        </li>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="contacto.php">Contacto</a>
+        </li>
+      </ul>
+      <div class="d-flex flex-flow justify-content-center ">
+        <a href="" class="btn btn-outline-primary mr-2">F</a>
+        <a href="" class="btn btn-outline-secondary">In</a>
       </div>
-    </nav>
-<!-- Banner de presentación -->
-<section class="justify-content-center d-flex container-fluid banner align-items-center">
-  <h1 class="display-1">Soy Luis Caballero</h1>
+
+    </div>
+  </nav>
+  <!-- Banner de presentación -->
+  <section class="justify-content-center d-flex container-fluid banner align-items-center slideshow slideshow-contacto">
+    <h1 class="display-1">Contacto</h1>
+  </section>
+  <section class="index-conocimientos container mt-5 pt-5" id="index-conocimientos">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Deja un mensaje</h1>
+        <p class="lead">Si estas pensando un nuevo proyecto y no sabes como empezar, no dudes en preguntar</p>
+      </div>
+    </div>
+      <!--Section: Contact v.2-->
+<section class="mb-4">
+    <div class="row">
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Nombre</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Asunto</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Mensaje</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </form>
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary text-light submit-contact" onclick="validateForm()">Enviar</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <!-- <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>San Francisco, CA 94126, USA</p>
+                </li>
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 01 234 567 89</p>
+                </li> -->
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>me@luiscaballerovega.com</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
 </section>
+  </section>
+
+    <!-- footer -->
+    <!-- <footer class="bg-dark p-5 mt-5"> -->
+      <!-- footer 0 -->
+      <!-- <div class="footer-0 container container-fluid">
+        <h2 class="display-4 text-white">Contacto</h2>
+        <div class="row pt-3">
+          <div class="col-4">
+              <a id="facebook" class="fo-face" href="https://www.facebook.com/alfreddocaballero">Facebook</a>
+          </div>
+          <div class="col-4">
+              <a id="linkedin" class="fo-in" href="https://www.linkedin.com/in/luis-alfredo-caballero-vega-1a9907116/">Linkedin</a>
+            </div>
+          <div class="col-4">
+            <p class="text-white">correo: alfreddocaballero@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+<script type="text/javascript" src="js/validate-form.js"></script>
 </body>
+
 </html>
