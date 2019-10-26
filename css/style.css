@@ -1,7 +1,8 @@
 /* generales */
 a:link {
-    text-decoration:none;
+    text-decoration: none;
 }
+
 /*  */
 .nav {
     z-index: 100;
@@ -16,21 +17,33 @@ a:link {
     color: #fff !important;
 }
 
-.navbar-dark .navbar-brand{
+.navbar-dark .navbar-brand {
     width: 5%;
 }
-.navbar-dark .navbar-brand img{
+
+.navbar-dark .navbar-brand img {
     width: 65%;
 }
+
+.navbar-logo {
+    width: 5%;
+}
+
+.navbar-logo img {
+    width: 65%;
+}
+
 /*---------------------- Home ---------------*/
-.lc-img-project{
+.lc-img-project {
     height: 250px;
     object-fit: cover;
 }
-.lc-jumbotron{
+
+.lc-jumbotron {
     margin: 0;
     padding: 2rem 1rem;
 }
+
 .banner {
     /* background: url("../images/ban-1.jpeg"); */
     height: 100vh;
@@ -42,13 +55,13 @@ a:link {
     height: 100vh;
 }
 
-#new-banner img{
+#new-banner img {
     height: 100%;
     object-fit: cover;
     width: 100%;
 }
 
-.new-banner h5{
+.new-banner h5 {
     background: #000;
     opacity: 0.6;
     padding: 10px 1px;
@@ -63,11 +76,12 @@ a:link {
     justify-content: space-between;
     width: 100%;
 }
-.about-us-1 h2{
+
+.about-us-1 h2 {
     color: #fff;
 }
 
-.about-us p{
+.about-us p {
     color: #fff;
 }
 
@@ -111,51 +125,105 @@ a:link {
     margin-top: -50px;
     border: 2px solid #ddd;
 }
+
 .img-nav-testi {
     width: 130px;
 }
+
 /* colores botones */
-.css-color{
+.css-color {
     background: #3595cf;
 }
-.joomla-color{
+
+.joomla-color {
     background: #76bb41;
 }
-.git-color{
+
+.git-color {
     background: #e94e31;
 }
-.mysql-color{
+
+.mysql-color {
     background: #e18b00;
 }
-.boo-color{
+
+.boo-color {
     background-color: #563d7c;
 }
-.cpanel-color{
+
+.cpanel-color {
     background-color: #f7692b;
 }
-.fo-face{
+
+.fo-face {
     text-decoration: none;
     color: #fff;
-    
+
 }
-.fo-face:hover{
+
+.fo-face:hover {
     color: #4267b2;
     text-decoration: none;
 }
-.fo-in{
+
+.fo-in {
     text-decoration: none;
     color: #fff;
 }
-.fo-in:hover{
+
+.fo-in:hover {
     color: #0077B5;
     text-decoration: none;
 }
-.slideshow{
+
+.slideshow {
     height: 50vh;
 }
+
 @media (min-width: 992px) {
     .display-testi {
         position: relative;
         margin-top: -110px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .link-logo {
+        left: 48%;
+        top: 0;
+    }
+
+    .navbar-logo img{
+        width: 100%;
+    }
+
+    .navbar-dark .navbar-brand img {
+        width: 100%;
+    }
+
+    .know-tooltip {
+        display: block !important;
+    }
+
+    .footer-contacto {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        align-items: center;
+        -webkit-align-items: center;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+
+    .footer-mail {}
+
+    .about-us-1 {
+        width: 100%;
+    }
+
+    .about-us-2 {
+        width: 0%;
     }
 }

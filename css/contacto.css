@@ -1,12 +1,13 @@
-.slideshow-contacto{
+.slideshow-contacto {
     background: url(../images/contacto/contacto.jpg);
 }
-.slideshow-contacto h1{
-    background: rgba(255,250,250,0.3);
+
+.slideshow-contacto h1 {
+    background: rgba(255, 250, 250, 0.3);
 }
-.navbar-logo{
-    width: 5%;
-}
-.navbar-logo img{
-    width: 65%;
+
+@media (max-width: 767px) {
+    .slideshow-contacto h1 {
+        font-size: 3.5rem;
+    }
 }

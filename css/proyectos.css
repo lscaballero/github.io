@@ -1,16 +1,37 @@
-.slideshow-proyectos{
+.slideshow-proyectos {
     background: url(../images/proyectos/plan.jpg);
 }
-.slideshow-proyectos .project-title{
-    background: rgba(0,0,0,0.5);
-    color: rgba(255,255,255);
+
+.slideshow-proyectos .project-title {
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255);
 }
-.no-style-list{
+
+.no-style-list {
     list-style: none;
 }
-.icon-project{
+
+.icon-project {
     width: 10%;
 }
-.icon-text{
-    margin: 0; padding: 0 10px; width: 90%;
+
+.icon-text {
+    margin: 0;
+    padding: 0 10px;
+    width: 90%;
+}
+
+.navbar-logo {
+    width: 5%;
+}
+
+.navbar-logo img {
+    width: 65%;
+}
+
+@media (max-width: 767px) {
+    .navbar-logo img{
+        width: 100%;
+    }
+    .slideshow-proyectos h1 {font-size: 3.5rem;}
 }

@@ -1,12 +1,27 @@
-.slideshow-blog{
+.slideshow-blog {
     background: url(../images/blog/slideshow-blog.jpg);
 }
-.slideshow-blog h1{
-    background: rgba(255,250,250,0.3);
+
+.slideshow-blog h1 {
+    background: rgba(255, 250, 250, 0.3);
 }
-.navbar-logo{
+
+.navbar-logo {
     width: 5%;
 }
-.navbar-logo img{
+
+.navbar-logo img {
     width: 65%;
+}
+
+@media (max-width: 767px) {
+    .navbar-logo img{
+        width: 100%;
+    }
+    .slideshow-blog h1{
+        font-size: 3.5rem;
+    }
+    .menu-inferior{
+        display: none;
+    }
 }
